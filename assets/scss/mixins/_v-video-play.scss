@@ -1,0 +1,5 @@
+@mixin v-video-play-size($size) {
+  @include component-vars-by-size($v-video-play, $size, 'v-video-play');
+  @include component-vars-by-size($v-video-play-button, $size, 'v-video-play-button');
+  @include component-vars-by-size($v-video-play-label, $size, 'v-video-play-label');
+}

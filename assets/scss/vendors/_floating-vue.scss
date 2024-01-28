@@ -1,0 +1,51 @@
+@import "floating-vue/dist/style.css";
+
+
+.v-popper--theme-tooltip {
+    &.v-popper__popper {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &.v-popper__popper--show-from .v-popper__wrapper {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+    }
+
+    &.v-popper__popper--show-to .v-popper__wrapper {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+        transition-delay: 0s, 0s, 0.2s;
+        transition-duration:  0.3s,  0.2s,  0s;
+        transition-property: transform, opacity, pointer-events;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+    }
+
+    .v-popper__popper.v-popper__popper--show-to .v-popper__wrapper {
+        transform: none;
+        transition: transform .2s;
+    }
+
+    .v-popper__inner {
+        @include text-body-s;
+
+        max-width: 324px;
+        padding: 24px;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 12px 96px 0 rgb(1 1 1 / 7%);
+        color: color(black);
+    }
+
+    .v-popper__arrow-container{
+        visibility: hidden;
+    }
+}
+
+

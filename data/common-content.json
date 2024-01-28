@@ -1,0 +1,31 @@
+{
+  "setting": {
+    "website_name": "Blandine Hertzog"
+  },
+  "main_menu": {
+    "item": {},
+    "children": [
+      {
+        "id": "home-page",
+        "url": "/",
+        "label": "Home"
+      },
+      {
+        "id": "projects-page",
+        "url": "/projets",
+        "label": "Projets"
+      },
+      {
+        "id": "archives-page",
+        "url": "/archives",
+        "label": "Archives"
+      }
+    ]
+  },
+  "footer": {
+    "item": {
+      "email": "hertzog.blandine@gmail.com"
+    },
+    "children": []
+  }
+}

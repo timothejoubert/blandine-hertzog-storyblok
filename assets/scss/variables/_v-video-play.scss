@@ -1,0 +1,42 @@
+$v-video-play: (
+        s: (
+                font-size: $tag-font-size-s,
+                padding: rem(4),
+                margin: 0 0 rem(32) 0
+        ),
+        m: (
+                font-size: $tag-font-size-m,
+                padding: rem(4),
+                margin: 0 0 rem(38) 0
+        ),
+        l: (
+                font-size: $tag-font-size-m,
+                padding: rem(4),
+                margin: 0 0 rem(56) 0
+        ),
+);
+$v-video-play-button: (
+        s: (
+                width: rem(32),
+                height: rem(32),
+        ),
+        m: (
+                width: rem(38),
+                height: rem(38),
+        ),
+        l: (
+                width: rem(68),
+                height: rem(68),
+        ),
+);
+$v-video-play-label: (
+        s: (
+                margin-inline: rem(8) rem(16),
+        ),
+        m: (
+                margin-inline: rem(16) rem(24),
+        ),
+        l: (
+                margin-inline: rem(16) rem(24),
+        ),
+);
